@@ -11,9 +11,18 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 -- things needed for this cuz why not, teehee
 
 local plr = game.Players.LocalPlayer
-local tool = Instance.new("Tool")
+local tool = Instance.new("Tool",plr:WaitForChild("Backpack"))
 
 -- prOPERTAYS
 
 tool.Parent = plr.Backpack
 tool.Name = "ly val"
+tool.Grip = CFrame.new(0,-0.8,-0.2) * CFrame.Angles(math.rad(0),math.rad(180),math.rad(0))
+
+local part = Instance.new("Part",tool)
+part.Name = "Handle"
+part.Size = Vector3.new(4,6,4)
+part.TopSurface = "Smooth"
+part.BottomSurface = "Smooth"
+part.CanCollide = false
+part:BreakJoints()
