@@ -26,3 +26,8 @@ part.TopSurface = "Smooth"
 part.BottomSurface = "Smooth"
 part.CanCollide = false
 part:BreakJoints()
+
+local mesh = Instance.new("SpecialMesh",part)
+mesh.MeshId = "rbxassetid://431003868" --mesh.MeshId = "rbxassetid://132920499"
+mesh.TextureId = "rbxassetid://430627740" --"http://www.roblox.com/asset/?id=134479421"
+mesh.Scale = Vector3.new(2,2,2)
