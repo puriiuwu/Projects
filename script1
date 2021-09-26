@@ -2,7 +2,7 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "purii x33";
 	Text = "Made by d_arkmatter // purin#1299 | ly val";
-	Icon = "rbxassetid://none";
+	Icon = "rbxassetid://7553615889";
 	Duration = 20;
 	Button1 = "mhm~";
 	Button2 = "nahh";
