@@ -1,0 +1,19 @@
+-- notification cuz why not :/
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "purii x33";
+	Text = "Made by d_arkmatter // purin#1299 | ly val";
+	Icon = "rbxassetid://7553615889";
+	Duration = 20;
+	Button1 = "mhm~";
+	Button2 = "nahh";
+})
+
+-- things needed for this cuz why not, teehee
+
+local plr = game.Players.LocalPlayer
+local tool = Instance.new("Tool")
+
+-- prOPERTAYS
+
+tool.Parent = plr.Backpack
+tool.Name = "ly val"
