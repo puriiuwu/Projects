@@ -1,1 +1,56 @@
+-- notification cuz why not :/
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "purii x33";
+	Text = "Made by d_arkmatter // purin#1299 | ly val";
+	Icon = "rbxassetid://none";
+	Duration = 20;
+	Button1 = "mhm~";
+	Button2 = "nahh";
+})
 
+-- instances for a gui cuz why not, teehee
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+
+-- prOPERTAYS
+
+if syn and syn.secure_gui then
+	syn.secure_gui(ScreenGui)
+end
+
+local cloneref = cloneref or function(ref)
+	return ref
+end
+
+local CoreGui
+
+if gethui or gethiddenui then
+	CoreGui = (gethui or gethiddenui)()
+else
+	CoreGui = cloneref(game:GetService("CoreGui"))
+end
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Active = true
+MainFrame.Draggable = true
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(23, 23, 23)
+MainFrame.BorderSizePixel = 1.5
+MainFrame.Draggable = true
+MainFrame.Position = UDim2.new(0.75, 1, 0.449999988, 0)
+MainFrame.Size = UDim2.new(0, 200, 0, 260)
+
+Name.Name = "name"
+Name.Parent = MainFrame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BorderSizePixel = 0
+Name.Size = UDim2.new(0, 200, 0, 38)
+Name.Font = Enum.Font.SourceSansItalic
+Name.Text = "cAN i put myBALS IN YO JAW"
+Name.TextColor3 = Color3.fromRGB()
+Name.TextSize = 14.000
+Name.TextWrapped = true
